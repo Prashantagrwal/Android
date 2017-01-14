@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference
+    android:title="Location"
+    android:key="@string/pref_location"
+    android:summary="Enter the postal/zip/pin code"
+    android:defaultValue="@string/pref_location_value"
+    android:inputType="number"
+    android:singleLine="true"
+    >
+</EditTextPreference>
+<ListPreference
+    android:title="Temperature Units"
+    android:key="Temperature"
+    android:summary="Choose the Option"
+    android:defaultValue="@string/pref_default_units"
+    android:entries="@array/lValues"
+    android:entryValues="@array/list"
+    >
+</ListPreference>
+    <CheckBoxPreference
+        android:title="@string/pref_enable_notifications_label"
+        android:key="@string/pref_enable_notifications_key"
+        android:summaryOff="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_enable_notifications_true"
+        android:defaultValue="@string/pref_enable_notifications_default" >
+    </CheckBoxPreference>
+</PreferenceScreen>
